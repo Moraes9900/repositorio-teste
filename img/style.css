@@ -1,0 +1,203 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+.logo-mario {
+        height: 300px;
+}
+
+.logo-mario-luid {
+        height: 500px;
+
+}
+
+.botao {
+        color: rgb(255, 255, 255);
+        background-color: rgb(235, 68, 101);
+        border-radius: 3px;
+        border: none;
+        width: 280px;
+        height: 50px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 30px;
+        white-space: nowrap
+}
+
+body {
+        height: 100vh;
+}
+
+.caixa-mae {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px;
+        height: 100vh;
+}
+
+.caixa-principal {
+        width: 40%;
+}
+
+
+
+.link-whatsapp img{
+        height: 60px;
+        margin-top: 20vh;
+        position: fixed;
+}     
+
+
+
+
+.caixa-video {
+        position: fixed;
+        z-index: -1;
+        top: 20;
+        left: 0;
+}
+
+video {
+        min-height: 100%;
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+}
+
+.mascara {
+        height: 100%;
+        width: 100%;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(146deg, rgba(0, 0, 0, 0.43601190476190477) 0%, rgba(0, 0, 0, 1) 100%);
+        background: linear-gradient(146deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 0.5833333333333333) 100%, rgba(0, 212, 255, 1) 100%);
+        position: fixed;
+        top: 0;
+}
+
+.caixa-mae {
+        color: rgb(255, 255, 255);
+}
+
+
+.header {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin: 30px;
+}
+
+.header img {
+        height: 70px;
+}
+
+.header a {
+        color: aliceblue;
+        font-size: 24px;
+        cursor: pointer;
+}
+
+.header a:hover {
+        color: crimson;
+        font-size: 20px;
+        transition: 0.5s ease-out
+}
+
+.Formulario-fale-conosco {
+        background-color: rgb(241, 236, 236);
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        position: fixed;
+        top: 50%;
+        left: -300px;
+        padding: 20px;
+        border-radius: 5px;
+        transition: left 1s ease-in-out;
+}
+
+.botton-pedir-orçamento {
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 0, 51);
+        border: none;
+        height: 50px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+        white-space: nowrap
+}
+
+input {
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        padding-left: 5px;
+        outline-color: chartreuse;
+}
+
+textarea {
+        height: 100px;
+        width: 270px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        padding-left: 5px;
+        outline-color: chartreuse;
+}
+
+.mascara-formulario {
+        visibility:hidden;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(146deg, rgba(0, 0, 0, 0.274) 0%, rgba(0, 0, 0, 1) 100%);
+        transition: visibility 1s ease-in-out;
+}
+
+/*
+   max valor menor que npx, aplica no css
+   min valor maior que npx, aplica no css
+*/
+
+@media(max-width: 1106px) {
+        p {
+                display: none;
+         }
+
+         .caixa-mae{
+                flex-direction: column;
+                padding: 10px;
+         }
+
+         .caixa-principal{
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+
+         }
+         .logo-mario{
+                height: 200px;
+         }
+         .logo-mario-luid{
+                height: 400px;
+         }
+         
+         .header{
+                margin: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+         }
+
+         .header img {
+                display: flex;
+         }
+
+         .header a {
+                font-size: 20px;
+         }
+}
